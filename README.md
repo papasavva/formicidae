@@ -4,6 +4,10 @@ Update .env files in Go with code.
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/papasavva/formicidae/CI?style=flat-square)](https://github.com/papasavva/formicidae/actions)
 [![Go Report Card](https://goreportcard.com/badge/github.com/papasavva/formicidae?style=flat-square)](https://goreportcard.com/report/github.com/papasavva/formicidae)
 
+## What is fomicidae?
+formicidate is a small tool for Go application. You can update the value of environment variables in a .env file with code.
+This can be handy in situations that you want to update the values programmatically like in unit tests.  
+
 ## Installation
 ```shell
 go get github.com/papasavva/formicidae
