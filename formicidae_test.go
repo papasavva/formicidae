@@ -1,7 +1,6 @@
 package formicidae
 
 import (
-	"fmt"
 	"os"
 	"testing"
 )
@@ -155,7 +154,6 @@ func updateFileWithContent(content string, readOnly bool) bool {
 
 	err = file.Close()
 	if err != nil {
-		fmt.Println(err)
 		return false
 	}
 
