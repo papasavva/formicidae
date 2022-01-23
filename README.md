@@ -29,7 +29,10 @@ func main() {
 	updatedContent, err := formicidae.UpdateVariable(".env", "SECRET_KEY", "myNewSecretKey")
 }
 ```
-If you wish to update multiple variables, you can call the function multiple times.
+
+## Notes
+- If you wish to update multiple variables, you can call the function multiple times.
+- The function will return the content of the whole file.
 
 ## Licence
 The code is licensed under the permissive MIT licence. [Read this](https://www.tldrlegal.com/l/mit) for a summary.
