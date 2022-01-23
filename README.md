@@ -26,7 +26,7 @@ import (
 )
 
 func main() {
-	updatedContent, err := formicidae.UpdateVariable(".env", "SECRET_KEY", "myNewSecretKeyGoesHere")
+	updatedContent, err := formicidae.UpdateVariable(".env", "SECRET_KEY", "myNewSecretKey")
 }
 ```
 If you wish to update multiple variables, you can call the function multiple times.
