@@ -143,9 +143,9 @@ func updateFileWithContent(content string, readOnly bool) bool {
 		flag = os.O_RDONLY
 	}
 
-	file, err := os.OpenFile(filename, flag, permissions)
+	file, _ := os.OpenFile(filename, flag, permissions)
 
-	_, err = file.WriteString(content)
+	_, err := file.WriteString(content)
 	if err != nil {
 		_ = file.Close()
 
@@ -153,9 +153,5 @@ func updateFileWithContent(content string, readOnly bool) bool {
 	}
 
 	err = file.Close()
-	if err != nil {
-		return false
-	}
-
-	return true
+	return err == nil
 }
