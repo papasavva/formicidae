@@ -6,6 +6,7 @@ import (
 	"strings"
 )
 
+// UpdateVariable updates the value of a variable inside the specified file
 func UpdateVariable(filename string, name string, value string) (string, error) {
 	input, err := ioutil.ReadFile(filename)
 	if err != nil {
