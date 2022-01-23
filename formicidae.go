@@ -27,7 +27,7 @@ func UpdateVariable(filename string, name string, value string) (string, error) 
 	}
 	output := strings.Join(lines, "\n")
 	err = ioutil.WriteFile(filename, []byte(output), 0644)
-	
+
 	if err != nil {
 		return "", errors.New("cannot write to the file")
 	}
