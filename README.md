@@ -39,5 +39,15 @@ func main() {
 - If you wish to update multiple variables, you can call the function multiple times.
 - The function will return the content of the whole file.
 
+## Contributing
+Contributions are welcomed.
+
+1. Fork it
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Commit your changes (git commit -am 'Added some feature')
+4. Push to the branch (git push origin my-new-feature)
+5. Create new Pull Request
+
+
 ## Licence
 The code is licensed under the permissive MIT licence. [Read this](https://www.tldrlegal.com/l/mit) for a summary.
